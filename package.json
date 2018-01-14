@@ -15,7 +15,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:insectman/TMGen.git"
+    "url": "git@github.com:insectman/tm-gen.git"
   },
   "dependencies": {},
   "devDependencies": {
