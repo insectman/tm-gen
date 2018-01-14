@@ -28,6 +28,10 @@ var myServer = http.createServer(function (request, response) {
       response.end(cssFile);
       break;
     case "/images/awAchSprite.jpg":
+      if (!response.getHeader('Cache-Control') || !response.getHeader('Expires')) {
+        response.setHeader("Cache-Control", "public, max-age=345600"); // ex. 4 days in seconds.
+        response.setHeader("Expires", new Date(Date.now() + 345600000).toUTCString());  // in ms.
+      }
       response.writeHead(200, { "Content-Type": "image/jpeg" });
       response.end(spriteFile);
       break;
