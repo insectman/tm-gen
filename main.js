@@ -78,4 +78,6 @@ function genRandBoard() {
   return { awards, achievements, allAwards, allAchievements };
 }
 
-myServer.listen(3000);
+var port = process.env.PORT || 3000
+
+myServer.listen(port);
