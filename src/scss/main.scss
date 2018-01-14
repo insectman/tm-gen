@@ -1,0 +1,24 @@
+$block-width: 289px;
+$block-height: 168.75px;
+$offset-left: 40.5px;
+$offset-top: 28px;
+
+.container {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.icon {
+  width: $block-width;
+  height: $block-height;
+  display: inline-block;
+}
+
+@for $i from 0 through 31 {
+  .icon-#{$i} {
+    background: url(/images/awAchSprite.jpg);
+    background-position: (-($offset-left + ($i % 4)*$block-width))  (-($offset-top + floor($i / 4)*$block-height))
+  }
+}

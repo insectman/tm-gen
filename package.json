@@ -1,0 +1,24 @@
+{
+  "name": "tm-gen",
+  "version": "1.0.1",
+  "description": "Terraforming Mars board random generator",
+  "author": "Jacob Dombayan",
+  "private": false,
+  "main": "main.js",
+  "engines": {
+    "node": ">=7.6",
+    "yarn": "*"
+  },
+  "scripts": {
+    "serve": "node main.js",
+    "dev": "nodemon /"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:insectman/TMGen.git"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "sass": "^1.0.0-beta.4"
+  }
+}

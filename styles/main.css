@@ -1,0 +1,138 @@
+.container {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; }
+
+.icon {
+  width: 289px;
+  height: 168.75px;
+  display: inline-block; }
+
+.icon-0 {
+  background: url(/images/awAchSprite.jpg);
+  background-position: -40.5px -28px; }
+
+.icon-1 {
+  background: url(/images/awAchSprite.jpg);
+  background-position: -329.5px -28px; }
+
+.icon-2 {
+  background: url(/images/awAchSprite.jpg);
+  background-position: -618.5px -28px; }
+
+.icon-3 {
+  background: url(/images/awAchSprite.jpg);
+  background-position: -907.5px -28px; }
+
+.icon-4 {
+  background: url(/images/awAchSprite.jpg);
+  background-position: -40.5px -196.75px; }
+
+.icon-5 {
+  background: url(/images/awAchSprite.jpg);
+  background-position: -329.5px -196.75px; }
+
+.icon-6 {
+  background: url(/images/awAchSprite.jpg);
+  background-position: -618.5px -196.75px; }
+
+.icon-7 {
+  background: url(/images/awAchSprite.jpg);
+  background-position: -907.5px -196.75px; }
+
+.icon-8 {
+  background: url(/images/awAchSprite.jpg);
+  background-position: -40.5px -365.5px; }
+
+.icon-9 {
+  background: url(/images/awAchSprite.jpg);
+  background-position: -329.5px -365.5px; }
+
+.icon-10 {
+  background: url(/images/awAchSprite.jpg);
+  background-position: -618.5px -365.5px; }
+
+.icon-11 {
+  background: url(/images/awAchSprite.jpg);
+  background-position: -907.5px -365.5px; }
+
+.icon-12 {
+  background: url(/images/awAchSprite.jpg);
+  background-position: -40.5px -534.25px; }
+
+.icon-13 {
+  background: url(/images/awAchSprite.jpg);
+  background-position: -329.5px -534.25px; }
+
+.icon-14 {
+  background: url(/images/awAchSprite.jpg);
+  background-position: -618.5px -534.25px; }
+
+.icon-15 {
+  background: url(/images/awAchSprite.jpg);
+  background-position: -907.5px -534.25px; }
+
+.icon-16 {
+  background: url(/images/awAchSprite.jpg);
+  background-position: -40.5px -703px; }
+
+.icon-17 {
+  background: url(/images/awAchSprite.jpg);
+  background-position: -329.5px -703px; }
+
+.icon-18 {
+  background: url(/images/awAchSprite.jpg);
+  background-position: -618.5px -703px; }
+
+.icon-19 {
+  background: url(/images/awAchSprite.jpg);
+  background-position: -907.5px -703px; }
+
+.icon-20 {
+  background: url(/images/awAchSprite.jpg);
+  background-position: -40.5px -871.75px; }
+
+.icon-21 {
+  background: url(/images/awAchSprite.jpg);
+  background-position: -329.5px -871.75px; }
+
+.icon-22 {
+  background: url(/images/awAchSprite.jpg);
+  background-position: -618.5px -871.75px; }
+
+.icon-23 {
+  background: url(/images/awAchSprite.jpg);
+  background-position: -907.5px -871.75px; }
+
+.icon-24 {
+  background: url(/images/awAchSprite.jpg);
+  background-position: -40.5px -1040.5px; }
+
+.icon-25 {
+  background: url(/images/awAchSprite.jpg);
+  background-position: -329.5px -1040.5px; }
+
+.icon-26 {
+  background: url(/images/awAchSprite.jpg);
+  background-position: -618.5px -1040.5px; }
+
+.icon-27 {
+  background: url(/images/awAchSprite.jpg);
+  background-position: -907.5px -1040.5px; }
+
+.icon-28 {
+  background: url(/images/awAchSprite.jpg);
+  background-position: -40.5px -1209.25px; }
+
+.icon-29 {
+  background: url(/images/awAchSprite.jpg);
+  background-position: -329.5px -1209.25px; }
+
+.icon-30 {
+  background: url(/images/awAchSprite.jpg);
+  background-position: -618.5px -1209.25px; }
+
+.icon-31 {
+  background: url(/images/awAchSprite.jpg);
+  background-position: -907.5px -1209.25px; }
