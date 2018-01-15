@@ -30,8 +30,23 @@ function genRandBoard() {
   const resources = Array.from({ length: 61 }, (x, i) => []);
 
 function getRandomResource() {
-  const rr = Math.floor(Math.random() * 6);
-  return rr === 5 ? 2 : rr;
+  const statisticWeights = [
+    5, //card
+    11, //steel
+    38, //leave
+    4, //titan
+    11, //heat
+  ]
+  let rnd = Math.floor(Math.random() * statisticWeights.reduce((a,e)=>a+e));
+  let resourceIndex;
+  let sum = 0;
+  statisticWeights.forEach((e,i) => {
+    if(rnd >= sum && rnd < sum + e) {
+      resourceIndex = i;
+    }
+    sum += e;
+  });
+  return resourceIndex;
 }
 
   allTiles.forEach(i => {
