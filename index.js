@@ -11,6 +11,7 @@ const filesMap = new Map();
   './images/oceanTile.png',
   './images/resSprite.png',
   './main.js',
+  './favicon.ico',
   './board.html',
   './index.html',
   './styles/main.css'].forEach(fileName =>
@@ -47,6 +48,9 @@ var myServer = http.createServer(function (request, response) {
       else {
         response.writeHead(200, { "Content-Type": "image/png" });
       }
+      break;
+    case '/favicon.ico':
+      response.writeHead(200, { "Content-Type": "image/x-icon" });
       break;
     case '/board':
       response.writeHead(200, { "Content-Type": "text/html" });
