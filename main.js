@@ -29,12 +29,17 @@ function genRandBoard() {
   let allTiles = Array.from({ length: 61 }, (x, i) => i);
   const resources = Array.from({ length: 61 }, (x, i) => []);
 
+function getRandomResource() {
+  const rr = Math.floor(Math.random() * 6);
+  return rr === 5 ? 2 : rr;
+}
+
   allTiles.forEach(i => {
     if (Math.floor(Math.random() * 1.9)) {
-      resources[i].push(Math.floor(Math.random() * 5));
+      resources[i].push(getRandomResource());
       if (Math.floor(Math.random() * 1.7)) {
         if (Math.floor(Math.random() * 1.15)) {
-          resources[i].push(Math.floor(Math.random() * 5));
+          resources[i].push(getRandomResource());
         }
         else {
           resources[i].push(resources[i][0]);
