@@ -1,138 +1,172 @@
+/* line 6, src/scss/main.scss */
 .container {
   padding: 10px;
   display: flex;
   justify-content: center;
   flex-wrap: wrap; }
 
+/* line 13, src/scss/main.scss */
 .icon {
   width: 289px;
   height: 168.75px;
   display: inline-block; }
 
+/* line 20, src/scss/main.scss */
 .icon-0 {
   background: url(/images/awAchSprite.jpg);
   background-position: -40.5px -28px; }
 
+/* line 20, src/scss/main.scss */
 .icon-1 {
   background: url(/images/awAchSprite.jpg);
   background-position: -329.5px -28px; }
 
+/* line 20, src/scss/main.scss */
 .icon-2 {
   background: url(/images/awAchSprite.jpg);
   background-position: -618.5px -28px; }
 
+/* line 20, src/scss/main.scss */
 .icon-3 {
   background: url(/images/awAchSprite.jpg);
   background-position: -907.5px -28px; }
 
+/* line 20, src/scss/main.scss */
 .icon-4 {
   background: url(/images/awAchSprite.jpg);
   background-position: -40.5px -196.75px; }
 
+/* line 20, src/scss/main.scss */
 .icon-5 {
   background: url(/images/awAchSprite.jpg);
   background-position: -329.5px -196.75px; }
 
+/* line 20, src/scss/main.scss */
 .icon-6 {
   background: url(/images/awAchSprite.jpg);
   background-position: -618.5px -196.75px; }
 
+/* line 20, src/scss/main.scss */
 .icon-7 {
   background: url(/images/awAchSprite.jpg);
   background-position: -907.5px -196.75px; }
 
+/* line 20, src/scss/main.scss */
 .icon-8 {
   background: url(/images/awAchSprite.jpg);
   background-position: -40.5px -365.5px; }
 
+/* line 20, src/scss/main.scss */
 .icon-9 {
   background: url(/images/awAchSprite.jpg);
   background-position: -329.5px -365.5px; }
 
+/* line 20, src/scss/main.scss */
 .icon-10 {
   background: url(/images/awAchSprite.jpg);
   background-position: -618.5px -365.5px; }
 
+/* line 20, src/scss/main.scss */
 .icon-11 {
   background: url(/images/awAchSprite.jpg);
   background-position: -907.5px -365.5px; }
 
+/* line 20, src/scss/main.scss */
 .icon-12 {
   background: url(/images/awAchSprite.jpg);
   background-position: -40.5px -534.25px; }
 
+/* line 20, src/scss/main.scss */
 .icon-13 {
   background: url(/images/awAchSprite.jpg);
   background-position: -329.5px -534.25px; }
 
+/* line 20, src/scss/main.scss */
 .icon-14 {
   background: url(/images/awAchSprite.jpg);
   background-position: -618.5px -534.25px; }
 
+/* line 20, src/scss/main.scss */
 .icon-15 {
   background: url(/images/awAchSprite.jpg);
   background-position: -907.5px -534.25px; }
 
+/* line 20, src/scss/main.scss */
 .icon-16 {
   background: url(/images/awAchSprite.jpg);
   background-position: -40.5px -703px; }
 
+/* line 20, src/scss/main.scss */
 .icon-17 {
   background: url(/images/awAchSprite.jpg);
   background-position: -329.5px -703px; }
 
+/* line 20, src/scss/main.scss */
 .icon-18 {
   background: url(/images/awAchSprite.jpg);
   background-position: -618.5px -703px; }
 
+/* line 20, src/scss/main.scss */
 .icon-19 {
   background: url(/images/awAchSprite.jpg);
   background-position: -907.5px -703px; }
 
+/* line 20, src/scss/main.scss */
 .icon-20 {
   background: url(/images/awAchSprite.jpg);
   background-position: -40.5px -871.75px; }
 
+/* line 20, src/scss/main.scss */
 .icon-21 {
   background: url(/images/awAchSprite.jpg);
   background-position: -329.5px -871.75px; }
 
+/* line 20, src/scss/main.scss */
 .icon-22 {
   background: url(/images/awAchSprite.jpg);
   background-position: -618.5px -871.75px; }
 
+/* line 20, src/scss/main.scss */
 .icon-23 {
   background: url(/images/awAchSprite.jpg);
   background-position: -907.5px -871.75px; }
 
+/* line 20, src/scss/main.scss */
 .icon-24 {
   background: url(/images/awAchSprite.jpg);
   background-position: -40.5px -1040.5px; }
 
+/* line 20, src/scss/main.scss */
 .icon-25 {
   background: url(/images/awAchSprite.jpg);
   background-position: -329.5px -1040.5px; }
 
+/* line 20, src/scss/main.scss */
 .icon-26 {
   background: url(/images/awAchSprite.jpg);
   background-position: -618.5px -1040.5px; }
 
+/* line 20, src/scss/main.scss */
 .icon-27 {
   background: url(/images/awAchSprite.jpg);
   background-position: -907.5px -1040.5px; }
 
+/* line 20, src/scss/main.scss */
 .icon-28 {
   background: url(/images/awAchSprite.jpg);
   background-position: -40.5px -1209.25px; }
 
+/* line 20, src/scss/main.scss */
 .icon-29 {
   background: url(/images/awAchSprite.jpg);
   background-position: -329.5px -1209.25px; }
 
+/* line 20, src/scss/main.scss */
 .icon-30 {
   background: url(/images/awAchSprite.jpg);
   background-position: -618.5px -1209.25px; }
 
+/* line 20, src/scss/main.scss */
 .icon-31 {
   background: url(/images/awAchSprite.jpg);
   background-position: -907.5px -1209.25px; }

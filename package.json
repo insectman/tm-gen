@@ -4,7 +4,7 @@
   "description": "Terraforming Mars board random generator",
   "author": "Jacob Dombayan",
   "private": false,
-  "main": "main.js",
+  "main": "index.js",
   "engines": {
     "node": ">=7.6",
     "yarn": "*"
@@ -12,7 +12,7 @@
   "scripts": {
     "start": "node main.js",
     "serve": "node main.js",
-    "dev": "nodemon /"
+    "dev": "nodemon"
   },
   "repository": {
     "type": "git",
