@@ -10,8 +10,8 @@
     "yarn": "*"
   },
   "scripts": {
-    "start": "node main.js",
-    "serve": "node main.js",
+    "start": "node index.js",
+    "serve": "node index.js",
     "dev": "nodemon"
   },
   "repository": {
