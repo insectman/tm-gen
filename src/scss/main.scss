@@ -18,7 +18,7 @@ $offset-top: 28px;
 
 @for $i from 0 through 31 {
   .icon-#{$i} {
-    background: url(/images/awAchSprite.jpg);
+    background: url(/images/awAchSprite.png);
     background-position: (-($offset-left + ($i % 4)*$block-width))  (-($offset-top + floor($i / 4)*$block-height))
   }
 }

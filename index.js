@@ -39,7 +39,7 @@ var myServer = http.createServer(function (request, response) {
     case "/images/resSprite.png":
     case "/images/oceanTile.png":
       if (!response.getHeader('Cache-Control') || !response.getHeader('Expires')) {
-        //response.setHeader("Cache-Control", "public, max-age=345600"); // ex. 4 days in seconds.
+        response.setHeader("Cache-Control", "public, max-age=345600"); // ex. 4 days in seconds.
         response.setHeader("Expires", new Date(Date.now() + 345600000).toUTCString());  // in ms.
       }
       if(request.url == "/images/board.jpg") {
