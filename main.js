@@ -22,6 +22,31 @@ function genRandAwAch() {
   return { awards, achievements };
 }
 
+function getTilePos(index) {
+  let row;
+  let width;
+  let rowPos;
+
+  rowPos = index + 1;
+  row = 0;
+  while (row < 10) {
+    width = 9 - Math.abs(row - 4);
+    if (rowPos <= width) {
+      rowPos--;
+      break;
+    }
+    rowPos -= width;
+    row++;
+  }
+
+  return {
+    row,
+    rowPos,
+    x: 686 + 136 * rowPos - 68 * (4 - (Math.abs(4 - row))),
+    y: 313.5 + 118 * row
+  };
+}
+
 function genRandBoard() {
 
   const { awards, achievements } = genRandAwAch();
@@ -33,9 +58,9 @@ function getRandomResource() {
   const statisticWeights = [
     5, //card
     11, //steel
-    38, //leave
+    45, //leave
     4, //titan
-    11, //heat
+    9, //heat
   ]
   let rnd = Math.floor(Math.random() * statisticWeights.reduce((a,e)=>a+e));
   let resourceIndex;
@@ -50,9 +75,9 @@ function getRandomResource() {
 }
 
   allTiles.forEach(i => {
-    if (Math.floor(Math.random() * 1.9)) {
+    if (Math.floor(Math.random() * 1.8)) {
       resources[i].push(getRandomResource());
-      if (Math.floor(Math.random() * 1.7)) {
+      if (Math.floor(Math.random() * 1.3)) {
         if (Math.floor(Math.random() * 1.15)) {
           resources[i].push(getRandomResource());
         }
@@ -67,9 +92,50 @@ function getRandomResource() {
 
   });
 
+  function hasNeighbours(t, possibleNeighbourPositions) {
+    let hasNeighboursBool = false;
+    possibleNeighbourPositions.forEach(n => {
+      const ut = t.row < n.row ? t : n;
+      const lt = t.row < n.row ? n : t;
+
+      if ((t.row === n.row && Math.abs(t.rowPos - n.rowPos) === 1) ||
+        (Math.abs(t.row - n.row) === 1) && (
+          (t.row+n.row <= 7 && (ut.rowPos === lt.rowPos || ut.rowPos === lt.rowPos - 1)) ||
+          (t.row+n.row >= 9 && (ut.rowPos === lt.rowPos || ut.rowPos === lt.rowPos + 1)) 
+          )) {
+        hasNeighboursBool = true;
+      }
+    });
+    return hasNeighboursBool;
+  }
+
   const oceanTiles = [];
+  var areasNum = 0;
+  var oceanPositions = [];
+  var areaLimitReached = false;
   for (let i = 0; i < 12; i++) {
-    oceanTiles.push(allTiles.getnkill());
+    let newOcean = allTiles.getnkill();
+    oceanTiles.push(newOcean);
+    console.log(areasNum);
+    if(areaLimitReached) {
+      continue;
+    }
+    ({ row, rowPos } = getTilePos(newOcean));
+    if(!hasNeighbours({ row, rowPos }, oceanPositions)) {
+      areasNum++;
+    }
+    oceanPositions.push({ row, rowPos });
+    if(areasNum === 5) {
+      areaLimitReached = true;
+      //remove tiles without neighbouring oceans from generation pool
+      const neighboringTiles = [];
+      allTiles.forEach(tileNum => {
+        if(hasNeighbours(getTilePos(tileNum), oceanPositions)) {
+          neighboringTiles.push(tileNum);
+        }
+      });
+      allTiles = neighboringTiles;
+    }
   }
 
   return { oceanTiles, resources };
@@ -114,31 +180,6 @@ $(document).ready(() => {
       }, false);
       img.src = imgsrc;
     });
-
-    function getTilePos(index) {
-      let row;
-      let width;
-      let rowPos;
-
-      rowPos = index + 1;
-      row = 0;
-      while (row < 10) {
-        width = 9 - Math.abs(row - 4);
-        if (rowPos <= width) {
-          rowPos--;
-          break;
-        }
-        rowPos -= width;
-        row++;
-      }
-
-      return {
-        row,
-        rowPos,
-        x: 686 + 136 * rowPos - 68 * (4 - (Math.abs(4 - row))),
-        y: 313.5 + 118 * row
-      };
-    }
 
     function onImgLoad(img, index, imgNum) {
       loadedImgs.set(index, img);

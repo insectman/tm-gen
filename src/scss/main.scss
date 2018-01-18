@@ -3,6 +3,10 @@ $block-height: 168.75px;
 $offset-left: 40.5px;
 $offset-top: 28px;
 
+#mainContainer {
+  min-height: 100%;
+}
+
 .container {
   padding: 10px;
   display: flex;
